@@ -1,0 +1,182 @@
+*, *::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    font-family: 'Red Hat Display', sans-serif;   
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    max-width: 28.125rem;
+    height: 43.438rem;
+    box-shadow:  0 1.875rem 3.125rem -1.25rem hsl(224, 67%, 77%);
+    border-radius: 1.563rem;
+}
+
+.hero-img {
+    display: block;
+    max-width: 100%;
+    border-top-left-radius: 1.563rem;
+    border-top-right-radius:1.563rem;
+    margin-bottom: 1.25rem;    
+}
+
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 22.188rem;
+    height: 6.125rem;
+    flex-direction: row;
+    border-radius: 0.938rem;
+    padding: 1.25rem;
+    background-color: hsl(225, 100%, 98%);
+    margin: 1.563rem;
+}
+
+.container a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.container a:hover {
+    text-decoration: none;
+    color:hsl(224, 23%, 55%);
+}
+
+.mini-container {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3.75rem;
+}
+
+.msc-icon {
+    margin-right: 1.25rem;
+}
+
+.mini-container h2, p {
+    margin: 0;
+}
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.cancel {
+    text-decoration: none;
+    margin-top: 1.875rem;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+    color:  hsl(223, 47%, 23%);
+}
+
+.btn {
+    display: block;
+    max-width: 100%;
+    width: 22.188rem;
+    height: 3.125rem;
+    background-color: hsl(245, 75%, 52%); 
+    border-radius: 0.938rem;
+    border: none;
+    cursor: pointer;
+    box-shadow:  0 1.25rem 1.875rem -1.25rem  hsl(223, 47%, 23%);
+}
+
+.btn:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.063rem;
+}
+
+@media screen and (max-width: 376px) { /*mobile size*/
+   
+    .hero {
+        width: 21.125rem;   
+        height: 37.438rem;     
+    }
+
+    p {
+        padding-right: 1.75rem;
+        padding-left: 1.75rem;
+        font-size: 1.063rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 900;
+    }
+    
+    .container {
+        margin:0;
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+        width: 18.188rem; 
+        height: 5.125rem;
+        background-color: hsl(225, 100%, 98%); 
+    }
+
+    .container a {
+        font-size: 0.875rem;
+        text-align: right;
+    }
+
+    .container p {
+        padding: 0;
+    }
+
+    .mini-container {
+        margin-right: 2.188rem;
+    }
+
+    .btn {
+        width: 18.188rem; 
+
+    }
+    
+    .cancel {
+        margin-top: 1.563rem;
+    }
+  
+}
+   
+
+
