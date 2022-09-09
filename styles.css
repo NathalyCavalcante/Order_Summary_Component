@@ -10,7 +10,7 @@ body {
    justify-content: center;
     min-height: 100vh;
     background-color: hsl(225, 100%, 94%);
-    background-image: url("/images/pattern-background-desktop.svg");
+    background-image: url("images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
