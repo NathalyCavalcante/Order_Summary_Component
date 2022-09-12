@@ -121,7 +121,7 @@ h2 {
     background-color: hsl(224, 23%, 55%);
 }
 
-a .btn {
+.proceed {
     text-decoration: none;
     color: white;
     font-weight: 700;
